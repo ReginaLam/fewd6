@@ -8,6 +8,13 @@ body {
 h1 {
 	text-align: center;
 }
+h2 {
+	color: #4B4B4B;
+}
+h3 {
+	color: #6F6F6F;
+}
+
 div {
 	background-color: #AFAFAF;
 	border-radius: 15px;
