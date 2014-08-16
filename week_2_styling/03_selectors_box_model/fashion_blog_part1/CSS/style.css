@@ -1,0 +1,25 @@
+body {
+	font-family: lato;
+	background-color: #fff;
+}
+header > nav > a {
+	color:#EEE;
+	border-bottom: 1px solid #EEE;
+	margin: 20px;
+	padding: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #A00;
+}
+h1, h1 > a {
+	color: #D00;
+}
+
+.bottom-nav {
+
+}
