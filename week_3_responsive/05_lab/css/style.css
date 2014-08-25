@@ -1,0 +1,50 @@
+/*PLEASE DO NOT GRADE THIS YET! WORKING ON IT STILL... 25 AUG*/
+body {
+	font-family: lato;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+/*^This contains the floated elements*/
+/*Think about helper styles*/
+.top-header {
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 3px solid #000;
+	height: 44px;
+}
+.top-nav {
+	text-align: right;
+}
+.logo {
+	position: absolute;
+	left: 20px;
+}
+.top-nav a {
+	text-transform: uppercase;
+	line-height: 44px;
+/*	this works if you have text on one line -- single line text*/
+	padding-right: 15px;
+	padding-left: 15px;
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+}
+.top-nav a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.photo-header img {
+	float: right;
+	position: absolute;
+}
+
