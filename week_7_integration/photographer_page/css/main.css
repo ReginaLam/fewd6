@@ -3,8 +3,7 @@
 body {
 	background-color: #000;
 	color: #000;
-	font-family: 'Lato', sans-serif;
-	font-size:
+	font-family: 'Open Sans', sans-serif;
 }
 
 *,
@@ -32,14 +31,15 @@ body {
 	text-align: right;
 }
 
-.bordered-section {
-	border-top: 44px solid #000;
-}
-
 .white-bg {
 	background-color: #fff;
 }
 
+/*Make this new helper class because we want the default for the lightbox to be hidden:*/
+
+.hidden {
+	display: none;
+}
 /* Module Classes */
 
 .main-container {
@@ -61,6 +61,7 @@ body {
 .nav-gallery {
 	padding-top: 48px;
 }
+
 
 .nav-link, .nav-link:hover,
 .nav-link:focus, .nav-link:visited {
@@ -349,4 +350,42 @@ footer {
 .copyright {
 	margin-top: 15px;
 	font-size: 0.7em;
+}
+/*1. make rule for background - can also use # and opacity (both would go from 0 to 1*/
+.lightbox-background {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+/*reposition to show it*/
+	top: 0;
+/*searched "z-index" here in editor, found that highest number is 2*/
+	z-index: 3;
+}
+.lightbox {
+	z-index: 4;
+	position: fixed;
+	top: 0;
+/*	behind the text:*/
+	background-color: #000;
+	color: #fff;
+	left: 50%;
+}
+.lightbox-top-bar {
+	text-align: right;
+}
+.lightbox-image {
+/*In HTML sometimes it recognizes the width if it's a percentage, but not the height?*/
+	height: 500px;
+}
+.lightbox-bottom-bar {
+	text-align: center;
+}
+/*Don't forget that you can choose two selectors and be able to change them at the same time later if needed*/
+.lightbox-top-bar, .lightbox-bottom-bar {
+	font-size: 1.2em;
+}
+.lightbox-next, .lightbox-prev, .lightbox-exit {
+	display: inline-block;
+	padding: 8px;
 }

@@ -271,5 +271,29 @@
 			</div>
 		</div>
 	</footer>
+<!-- 1. Make background: -->
+	<div class="lightbox-background hidden"></div>
+<!-- 2. Make Lightbox to contain all of the things -->
+	<div class="lightbox hidden">
+		<div class="lightbox-top-bar">
+			<span class="lightbox-exit">X</span>
+		</div>
+		<div class="lightbox-body">
+<!-- 			We're going to change the source of the image dynamically using jQuery -->
+			<img class="lightbox-image" src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/art/1.jpg"/>
+		</div>
+		<div class="lightbox-bottom-bar">
+			<div class="lightbox-caption">
+				This is the caption.
+			</div>
+			<div class="lightbox-controls">
+				<span class="lightbox-previous">&lt;</span>
+				<span class="lightbox-next">&gt;</span>
+			</div>
+		</div>
+<!-- Put the javascript source at the bottom: -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+
 </body>
 </html>
